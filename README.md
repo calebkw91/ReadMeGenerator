@@ -1,5 +1,3 @@
-![license](https://img.shields.io/badge/license-The_Unlicense-green)
-
 # ReadMeGenerator
 
 ## Description
