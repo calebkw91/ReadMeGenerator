@@ -3,7 +3,7 @@
 # ReadMeGenerator
 
 ## Description
-This project will prompt the user for input and generate a dynamic readme file with a license badge and table of contents.
+This project will prompt the user for input and generate a dynamic readme file with a license badge and table of contents. See the NEWreadme.md file in this directory for an example output.
 
 ## Installation
 <a name="installation"></a>
