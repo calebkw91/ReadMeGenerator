@@ -39,11 +39,11 @@ let questions =
     choices:
     [
         'MIT',
-        'Apache 2.0',
-        'The Unlicense',
-        'GNU AGPLv3',
-        'GNU GPLv3',
-        'GNU LGPLv3'
+        'Apache_2.0',
+        'The_Unlicense',
+        'GNU_AGPLv3',
+        'GNU_GPLv3',
+        'GNU_LGPLv3'
     ]
 },
 {
@@ -68,7 +68,9 @@ let createREADME = (response) =>
     const {title, description, installation, usageInfo, contribution, testInstructions, license, githubUser, email} = response;
 
     let readmeString = 
-`# ${title}
+`![license](https://img.shields.io/badge/license-${license}-green)
+
+# ${title}
 
 ## Description
 ${description}
@@ -92,7 +94,7 @@ ${usageInfo}
 
 ## License
 <a name="license"></a>
-${license}
+This application is covered under the ${license} license.
 
 ## Contributing
 <a name="contributing"></a>
@@ -107,7 +109,7 @@ ${testInstructions}
 You can find my Github user profile [here.](https://github.com/${githubUser})
 I can be reached by email at ${email}`;
 
-    fs.writeFile("README.md", readmeString, (err) =>
+    fs.writeFile("NEWreadme.md", readmeString, (err) =>
     {
         if(err)
         {
